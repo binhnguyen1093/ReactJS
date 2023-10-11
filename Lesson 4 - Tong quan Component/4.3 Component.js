@@ -13,7 +13,7 @@
  *      Class component
  *      Functional component (Nên đi theo hướng này): viết trong hàm và hàm trả về 1 JSX
  * 
- *  2. Chia theo chức năng
+ *  2. Chia theo chức năng (Bai 4.4)
  *      Container component
  *      Presentational component
  * 
