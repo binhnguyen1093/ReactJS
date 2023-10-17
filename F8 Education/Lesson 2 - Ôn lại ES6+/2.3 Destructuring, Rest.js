@@ -44,3 +44,29 @@ var { name: parentName, children: { name: childrenName } } = course; //Vi object
 
 console.log(parentName, childrenName)
 
+//Trường hợp thứ 2 sử dụng với Rest
+// nếu phía trước ko truyền vào biến nào thì js tự hiểu phần còn lại là tất cả, nhứng nếu truyền vào thêm para thì tùy vào giá trị truyền vào rest sẽ là phần còn lại
+function logger(...params) {
+    console.log(params);
+}
+
+logger(1, 2, 3, 4) // reusult ra mảng 1,2,3,4
+
+function logger2(a, b, ...params) {
+    console.log(params);
+}
+
+logger2(1, 2, 3, 4) // reusult ra mảng 3,4
+
+//Với Object thì truyền thẳng key vào object chúng ta sẽ lấy luôn dc value
+
+function logger3({ name, ...rest }) {
+    console.log(name, price); // ra value name Javascript
+    console.log(rest) // ra mảng value 1000 và description
+}
+
+logger3({
+    name: 'Javascript',
+    price: 1000,
+    desciption: 'description'
+})
