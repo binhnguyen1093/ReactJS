@@ -14,7 +14,7 @@ h1DOM.innerText = 'Hello guys'; // với DOM là chuỗi nhưng với React thì
 document.body.appendChild(h1DOM)
 
 //React
-//Cú pháp chung: React.createElement(type, props, children, n) (tên thẻ, các attribute, content, content thứ n)
+//Cú pháp chung: React.createElement(type, props, children, n) (tên thẻ, các attribute, content, content thứ n) *******
 const h1React = React.createElement('h1', {
     title: 'Hello React',
     className: 'heading React'
