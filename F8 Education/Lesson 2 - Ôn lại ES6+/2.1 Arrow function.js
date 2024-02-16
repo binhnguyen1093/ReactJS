@@ -15,9 +15,11 @@
 *      xử lý function
 * }
 * 
-* nếu chỉ return về giá trị thì chỉ cần bỏ dấu {} và viết kết quả return vì arrow function tự hiểu sau => là retrun 1 giá trị
-* nế return về object hoặc array thì đưa các giá trị return vào dấu ()
-* 
+* nếu chỉ return về giá trị thì chỉ cần bỏ dấu {} và viết kết quả return vì arrow function tự hiểu sau => là retrun 1 giá trị. 
+VD: const sum = (a, b) => a + b
+
+* nếu return về object hoặc array thì đưa các giá trị return vào dấu (). 
+VD: const sum = (a, b) => ({a: a, b: b});
 */
 
 
