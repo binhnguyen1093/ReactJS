@@ -4,7 +4,7 @@
  * 
  */
 
-const h1 = document.createElement('h1'); //Element chi3 moi71 dc ghi vào bộ nhớ và chưa xuất hiện trên giao diện
+const h1 = document.createElement('h1'); //Element chỉ mới dc ghi vào bộ nhớ và chưa xuất hiện trên giao diện
 const root = document.getElementById('root') //Inspect Element vẫn thấy thẻ h1 nằm trong root , nhưng nếu View page source ra chỉ thấy div id root trống
 
 /**

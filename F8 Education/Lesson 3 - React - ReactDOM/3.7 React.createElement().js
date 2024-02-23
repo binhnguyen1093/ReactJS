@@ -9,12 +9,15 @@ const h1DOM = document.createElement('h1');
 
 h1DOM.title = 'Hello';
 h1DOM.className = 'heading';
-h1DOM.innerText = 'Hello guys'; // với DOM là chuỗi nhưng với React thì nó sẽ hiểu la bất kỳ kiểu dữ liệu nào nên ko thể dùng innerText cho React
+h1DOM.innerText = 'Hello guys'; // với DOM là chuỗi nhưng với React thì nó sẽ hiểu là bất kỳ kiểu dữ liệu nào nên ko thể dùng innerText cho React, 
+//React sẽ hiểu nội dung nắm giữa là 1 children (ở đây là đối số thứ 3).
 
 document.body.appendChild(h1DOM)
 
 //React
-//Cú pháp chung: React.createElement(type, props, children, n) (tên thẻ, các attribute, content, content thứ n) *******
+//Cú pháp chung: React.createElement(type, props, children, n) (tên thẻ, các attribute (dạng object), content, content thứ n) *******
+//Mặt dù children là đối số thứ 3 nhưng khi show trên console log sẽ tự hiểu là 1 props, sẽ sinh ra 1 attribute children giống title và className. 
+//Đối số thứ 3 children sẽ thể hiện trong props
 const h1React = React.createElement('h1', {
     title: 'Hello React',
     className: 'heading React'

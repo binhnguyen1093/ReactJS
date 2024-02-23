@@ -1,5 +1,5 @@
 /**
- * 
+ * React-Native: chủ yếu xài cho Android, IOS, cùng với React DOM đều bắt nguồn từ thư viện React
  * React-DOM: dùng để render ra React Element
  *  - Là thư viện làm cầu nối giữa React và DOM
  *  - Giúp React tạo ra được react element và dùng element đó render vào DOM

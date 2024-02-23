@@ -28,3 +28,18 @@ logger('Test Message..', TYPE_ERROR);// Sử dụng Module
 /**
  * import ko có destructuring là import default, còn lại là ko phải export default
  */
+
+/**
+ * Muốn import ko xài destructuring thì dùng cú pháp import *
+ * import * as [tên đại diện] from './constants.js'
+ */
+
+import * as constant from './constants.js' // cú pháp as để đổi tên của default.
+
+logger('Test Message2..', constant.TYPE_WARN)
+
+/**
+ * Có thể import 1 function từ 1 file js mà file js đó export function từ file js khác
+ * VD: file logger.js  co chứa các TPYE MESSAGE. export { default } from './logger.js' //Cách viết rút gọn
+ * file index.js export default logger từ logger.js
+ */

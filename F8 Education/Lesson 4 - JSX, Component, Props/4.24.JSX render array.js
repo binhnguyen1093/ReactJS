@@ -26,4 +26,24 @@ const jsx = (
     </ul>
 )
 
-ReactDOM.render(jsx, document.getElementById('root'))
+
+
+const manga = [
+    {
+        name: 'One Piece',
+    },
+    {
+        name: 'Naruto',
+    },
+    {
+        name: 'Fairy Tail'
+    }
+];
+
+const mangaJSX = <ul>
+    {manga.map(function mangas(array) {
+        return <li>{array.name}</li>
+    })}
+</ul>
+
+ReactDOM.render([jsx, mangaJSX], document.getElementById('root'))

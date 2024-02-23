@@ -9,6 +9,8 @@
  *  => cho nên khi muốn truyền object qua JSX thì sử dụng dấu { } bên trong { } lần nữa : { { object }}
  * 
  *  <!-- phải đặt type="text/babel" để sử dụng th7 viện babel  --> bên HTML
+ * 
+ * Thuộc tính style trong html phải được khai báo bằng object dù cho chỉ có 1 thuộc tính
  */
 
 /**

@@ -10,7 +10,7 @@
 //Map()
 
 var array = ['<h1>Title 1</h1>', '<h1>Title 2</h1>', '<h1>Title 3</h1>'];
-
+console.log(array)
 var newarray = array.map(function (array) {
     return array;
 })
